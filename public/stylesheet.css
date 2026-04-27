@@ -1,0 +1,128 @@
+body{
+    background-color:#EEEFFF ;
+}
+
+p1{
+    width: 93px;
+    height: 22px;
+    left: 40px;
+    top: 13px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: "Lucida Console";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;  
+    position: relative;  
+}
+
+p2{
+    width: 508px;
+    height: 28px;
+    left: 14px;
+    top: 7.5px;
+    flex-shrink: 0;
+    color: #000;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+    font-family: "Lucida Console";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+}
+
+.background{
+    width: 982px;
+    height: 653px;
+    flex-shrink: 0;
+    border: 1px solid #B4C5E4;
+    background: #000;
+    margin: auto;
+    margin-top: 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+.bar{
+    width: 928px;
+    height: 43px;
+    left: 26px;
+    top: 50px;
+    flex-shrink: 0;
+    background: #FFF;
+    position: absolute;
+}
+
+.main{
+    width: 928px;
+    height: 517px;
+    left: 26px; 
+    top: 110px;
+    flex-shrink: 0;
+    border: 1px solid #B4C5E4;
+    background: #B4C5E4;
+    position: absolute;
+    overflow: hidden;
+}
+
+.cancel_icon{
+    position: absolute;
+    right: 26px;
+    top: 13px;
+    width: 34px;
+    height: 34px;
+}
+
+p3{
+    position: absolute;
+    margin: auto;
+    width: 686px;
+    height: 80px;
+    top: 179px;
+    left: 121px;
+    flex-shrink: 0;
+    color: #000;
+    -webkit-text-stroke-width: 3.5px;
+    -webkit-text-stroke-color: #000;
+    font-family: "Lucida Console";
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+p4{
+    position: absolute;
+    width: 576px;
+    height: 62px;
+    top: 286px;
+    left: 176px;
+    flex-shrink: 0;
+    color: #161B33;
+    text-align: center;
+    font-family: "Anonymous Pro";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+}
+
+p5{
+    position: absolute;
+    bottom: 25px;
+    left: 60px;
+    color: #161B33;
+    text-align: center;
+    font-family: "Anonymous Pro";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    word-spacing: 123px;
+}
