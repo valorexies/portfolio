@@ -6,9 +6,9 @@ openTab stores which tab is open, clicking an icon sets it, closing it sets it b
 
 import {useState} from "react";
 import "./styles/stylesheet.css";
-import MainWindow from "./components/MainWindow";
-import BubbleLayer from "./components/BubbleLayer";
-import IconGrid from "./components/IconGrid";
+import MainWindow from "./components/MainWindow.jsx";
+import BubbleLayer from "./components/BubbleLayer.jsx";
+import IconGrid from "./components/IconGrid.jsx";
 
 export default function App() {
   const [openTab, setOpenTab] = useState(null);
@@ -16,9 +16,9 @@ export default function App() {
 
   return (
     <>
-      <bubbleLayer />
-      <mainWindow />
-      <iconGrid setOpenTab={setOpenTab} />
+      <BubbleLayer />
+      <MainWindow />
+      <IconGrid setOpenTab={setOpenTab} />
 
       {openTab === "about" && (
       <DraggableTab title="About">
