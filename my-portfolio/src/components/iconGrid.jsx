@@ -5,11 +5,11 @@ sends clicks to app.jsx so when you click on icon it opens it and app.jsx reacts
 
 export default function IconGrid({ setOpenTab }) {
   const icons = [
-    { label: "about", id: "about", img: "/about.png" },
-    { label: "links", id: "links", img: "/link.png" },
-    { label: "work", id: "work", img: "/work.png" },
-    { label: "faq", id: "faq", img: "/faq.png" },
-    { label: "contact", id: "contact", img: "/contact.png" }
+    { label: "about", id: "about"},
+    { label: "links", id: "links"},
+    { label: "work", id: "work"},
+    { label: "faq", id: "faq",},
+    { label: "contact", id: "contact"}
   ];
 
   return (
@@ -18,9 +18,9 @@ export default function IconGrid({ setOpenTab }) {
         <div
           key={icon.id}
           className="icon-item"
-          onClick={() => setOpenTab(icon.id)}
+           onClick={() => console.log(`Open ${icon.id} window`)}
         >
-          <img src={icon.img} className="icon-image" alt={icon.label} />
+          <div className="icon-pixel-box"></div>
           <span>{icon.label}</span>
         </div>
       ))}
