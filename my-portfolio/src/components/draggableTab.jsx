@@ -10,6 +10,16 @@ export default function DraggableTab({ title, children, onClose }) {
     <Rnd
       default={{ x: 120, y: 120, width: 320, height: 240 }}
       dragHandleClassName="tab-title"
+      enableResizing={{
+        top: false,
+        right: true,
+        bottom: true,
+        left: false,
+        topRight: false,
+        bottomRight: true,
+        bottomLeft: false,
+        topLeft: false,
+      }}
       className="draggable-tab"
     >
       <div className="tab-title">
