@@ -3,13 +3,13 @@
 sends clicks to app.jsx so when you click on icon it opens it and app.jsx reacts to open the correct draggable window
 */
 
-export default function IconGrid() {
+export default function IconGrid({ setOpenTab }) {
   const icons = [
-    { label: "about", id: "about" },
-    { label: "links", id: "links" },
-    { label: "work", id: "work" },
-    { label: "faq", id: "faq" },
-    { label: "contact", id: "contact" }
+    { label: "about", id: "about", img: "/about.png" },
+    { label: "links", id: "links", img: "/link.png" },
+    { label: "work", id: "work", img: "/work.png" },
+    { label: "faq", id: "faq", img: "/faq.png" },
+    { label: "contact", id: "contact", img: "/contact.png" }
   ];
 
   return (
@@ -18,12 +18,13 @@ export default function IconGrid() {
         <div
           key={icon.id}
           className="icon-item"
-          onClick={() => console.log(`Open ${icon.id} window`)}
+          onClick={() => setOpenTab(icon.id)}
         >
-          <div className="icon-pixel-box"></div>
+          <img src={icon.img} className="icon-image" alt={icon.label} />
           <span>{icon.label}</span>
         </div>
       ))}
     </div>
   );
 }
+
