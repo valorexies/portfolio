@@ -2,19 +2,25 @@ body {
   background: #bde0fe;
   margin: 0;
   font-family: "Courier New", monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 /* Main Window */
 .main-window {
-  width: 600px;
-  margin: 40px auto;
+  width: 650px;              /* larger width */
+  min-height: 420px;         /* larger height */
+  margin: 60px auto;         /* centers horizontally */
+  background: #e3f2fd;       /* your light blue */
   border: 4px solid black;
-  background: #e3f2fd;
-  position: relative;
-  padding-bottom: 20px;
   box-shadow: 6px 6px 0px #000;
-  z-index: 10;
+  padding: 20px;
+  position: relative;
+  z-index: 10;               /* ensures it's above bubbles */
 }
+
 
 .title-bar {
   background: #d9d9d9;
@@ -39,8 +45,9 @@ body {
 
 .icon-row {
   display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
+  justify-content: space-between;
+  margin-top: 25px;
+  padding: 0 20px;
 }
 
 .icon-item {
@@ -65,8 +72,26 @@ body {
 }
 
 .icon-item {
-  text-align: center;
   cursor: pointer;
+}
+
+.icon-image {
+  width: 48px;
+  height: 48px;
+  image-rendering: pixelated;
+  margin-bottom: 6px;
+}
+
+.icon-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icon-button span {
+  font-family: "Courier New", monospace;
+  font-size: 14px;
 }
 
 .icon-pixel-box {

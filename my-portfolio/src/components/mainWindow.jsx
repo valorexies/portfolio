@@ -1,4 +1,4 @@
-export default function MainWindow() {
+export default function MainWindow({ setOpenTab }) {
   return (
     <div className="main-window">
 
@@ -14,19 +14,36 @@ export default function MainWindow() {
         <span>HELP</span>
       </div>
 
-      {/* Main Content */}
       <div className="home-content">
         <h1>hi, i'm alexia</h1>
         <p>western university</p>
         <p>comp sci student</p>
 
-        {/* Icon Row */}
         <div className="icon-row">
-          <div className="icon-item" onClick={() => console.log("about")}>about</div>
-          <div className="icon-item" onClick={() => console.log("links")}>links</div>
-          <div className="icon-item" onClick={() => console.log("work")}>work</div>
-          <div className="icon-item" onClick={() => console.log("faq")}>faq</div>
-          <div className="icon-item" onClick={() => console.log("contact")}>contact</div>
+          <div className="icon-button" onClick={() => setOpenTab("about")}>
+            <img src="/about.png" className="icon-image" alt="about" />
+            <span>about</span>
+          </div>
+
+          <div className="icon-button" onClick={() => setOpenTab("links")}>
+            <img src="/link.png" className="icon-image" alt="links" />
+            <span>links</span>
+          </div>
+
+          <div className="icon-button" onClick={() => setOpenTab("work")}>
+            <img src="/work.png" className="icon-image" alt="work" />
+            <span>work</span>
+          </div>
+
+          <div className="icon-button" onClick={() => setOpenTab("faq")}>
+            <img src="/faq.png" className="icon-image" alt="faq" />
+            <span>faq</span>
+          </div>
+
+          <div className="icon-button" onClick={() => setOpenTab("contact")}>
+            <img src="/contact.png" className="icon-image" alt="contact" />
+            <span>contact</span>
+          </div>
         </div>
       </div>
 

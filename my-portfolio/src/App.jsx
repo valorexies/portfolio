@@ -17,8 +17,10 @@ export default function App() {
   return (
     <>
       <BubbleLayer />
-      <MainWindow />
-      <IconGrid setOpenTab={setOpenTab} />
+      <MainWindow setOpenTab={setOpenTab}/>
+
+      
+   
 
       {openTab === "about" && (
       <DraggableTab title="About">
@@ -49,7 +51,7 @@ export default function App() {
         <p>Contact content here</p>
       </DraggableTab>
       )}
-
+  
     </>
   );
 }
