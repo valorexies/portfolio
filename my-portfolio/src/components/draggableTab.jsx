@@ -8,7 +8,7 @@ import { Rnd } from "react-rnd";
 export default function DraggableTab({ title, children, onClose }) {
   return (
     <Rnd
-      default={{ x: 120, y: 120, width: 320, height: 240 }}
+      default={{ x: 120, y: 120, width: 500, height: 400 }}
       dragHandleClassName="tab-title"
       enableResizing={{
         top: false,

@@ -15,8 +15,6 @@ export default function MainWindow({setOpenTab}) {
       </div>
 
       
-      
-
       {/* Main Content */}
       <div className="home-content">
         <h1>hi, i'm alexia</h1>
@@ -30,11 +28,11 @@ export default function MainWindow({setOpenTab}) {
           <img src="/about.png" className="icon-image" alt="about" />
         </div>
 
-        <div className="icon-item" onClick={() => setOpenTab("links")}>
+        <div className="icon-item" onClick={() => setOpenTab("projects")}>
           <img src="/link.png" className="icon-image" alt="link" />
         </div>
 
-        <div className="icon-item" onClick={() => setOpenTab("work")}>
+        <div className="icon-item" onClick={() => setOpenTab("experience")}>
           <img src="/work.png" className="icon-image" alt="work" />
         </div>
 
