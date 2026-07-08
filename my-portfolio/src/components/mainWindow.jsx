@@ -26,33 +26,32 @@ export default function MainWindow({setOpenTab}) {
       <div className="icon-row">
         <div className="icon-item" onClick={() => setOpenTab("about")}>
           <img src="/about.png" className="icon-image" alt="about" />
+          <span className="icon-label">about</span>
         </div>
 
         <div className="icon-item" onClick={() => setOpenTab("projects")}>
-          <img src="/link.png" className="icon-image" alt="link" />
+          <img src="/projects.png" className="icon-image" alt="projects" />
+          <span className="icon-label">projects</span>
         </div>
 
         <div className="icon-item" onClick={() => setOpenTab("experience")}>
           <img src="/work.png" className="icon-image" alt="work" />
+          <span className="icon-label">experience</span>
         </div>
 
         <div className="icon-item" onClick={() => setOpenTab("faq")}>
           <img src="/faq.png" className="icon-image" alt="faq" />
+          <span className="icon-label">FAQ</span>
         </div>
 
         <div className="icon-item" onClick={() => setOpenTab("contact")}>
           <img src="/contact.png" className="icon-image" alt="contact" />
+          <span className="icon-label">contact</span>
         </div>
       </div>
 
        
       
-
-      {/* Decorations */}
-      <div className="decorations">
-        <img src="/bubble.png" className="bubble" alt="" />
-        <img src="/bubble.png" className="bubble" alt="" />
-      </div>
     </div>
   );
 }
