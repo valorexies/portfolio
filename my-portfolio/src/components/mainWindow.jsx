@@ -1,4 +1,8 @@
+
 export default function MainWindow({setOpenTab}) {
+
+
+
   return (
     <div className="main-window">
 

@@ -60,6 +60,11 @@ body {
   align-items: center;
   cursor: pointer;
   font-family: "Courier New", monospace;
+  transition: transform 0.2s ease;
+}
+
+.icon-item:hover {
+  transform: translateY(-8px);
 }
 
 .icon-label {
@@ -151,4 +156,109 @@ body {
   padding: 0 18px;
   overflow: hidden;
   background-color: #f6f6f6;
+}
+
+.music-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #e3f2fd;
+  border: 3px solid black;
+  box-shadow: 4px 4px 0px #000;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 16px;
+  z-index: 200;
+}
+
+/* experience item */
+
+.experience-item {
+  border-bottom: 2px solid #000;
+  padding: 14px 0;
+  margin-bottom: 14px;
+}
+
+.experience-item:last-child {
+  border-bottom: none;
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.experience-header h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.experience-role {
+  font-style: italic;
+  font-size: 13px;
+}
+
+.experience-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #555;
+  margin: 4px 0 8px;
+}
+
+.experience-description {
+  font-size: 13px;
+  margin: 4px 0;
+}
+
+.experience-subheading {
+  font-weight: bold;
+  font-size: 13px;
+  margin: 8px 0 4px;
+}
+
+.experience-list {
+  margin: 0 0 8px 18px;
+  padding: 0;
+  font-size: 13px;
+}
+
+.experience-skills {
+  font-size: 12px;
+  color: #333;
+}
+
+/* skills */ 
+
+.skills-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-family: "Courier New", monospace;
+}
+
+.skills-group h4 {
+  margin: 0 0 8px;
+  font-size: 14px;
+  font-weight: bold;
+  border-bottom: 2px solid #000;
+  padding-bottom: 4px;
+}
+
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-tag {
+  background: #e3f2fd;
+  color: #000;
+  border: 2px solid black;
+  box-shadow: 2px 2px 0px #000;
+  padding: 4px 10px;
+  font-size: 12px;
+  white-space: nowrap;
 }
