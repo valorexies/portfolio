@@ -85,6 +85,12 @@ body {
   margin-bottom: 6px;
 }
 
+.cancel_icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
 
 /* Bubbles */
 .bubble-layer {
